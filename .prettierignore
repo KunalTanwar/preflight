@@ -1,0 +1,2 @@
+# ignore minified CSS files
+*.min.css

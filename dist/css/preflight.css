@@ -1,0 +1,378 @@
+:root {
+  --primary-font: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --secondary-font: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --tertiary-font: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --emoji-font: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Android Emoji", EmojiSymbols, "EmojiOne Mozilla", "Twemoji Mozilla", "Segoe UI Symbol";
+}
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+/*
+ * 1. Removes the default `margin` of every element.
+ * 2. Removes the default `padding` of every element.
+ * 3. Sets the `box-sizing` of every element to `border-box`.
+ */
+*,
+::after,
+::before {
+  margin: 0; /* 1 */
+  padding: 0; /* 2 */
+  box-sizing: border-box; /* 3 */
+}
+
+html {
+  tab-size: 4;
+  height: 100%;
+}
+
+/*
+ * 1. Use a consistent sensible `line-height` in all browsers.
+ * 2. Prevent adjustments of `font-size` after orientation changes in iOS.
+ * 3. Enables kerning and optional ligatures.
+ * 4. 
+ */
+body {
+  height: inherit;
+  min-height: 100%;
+  line-height: 1.5; /* 1 */
+  font-size: 1rem;
+  text-size-adjust: 100%; /* 2 */
+  font-family: var(--primary-font);
+  text-rendering: optimizeLegibility; /* 3 */
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent; /* 4 */
+}
+
+a,
+abbr,
+address,
+area,
+article,
+aside,
+audio,
+b,
+base,
+bdi,
+bdo,
+blockquote,
+br,
+button,
+canvas,
+caption,
+cite,
+code,
+col,
+colgroup,
+data,
+datalist,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hr,
+i,
+iframe,
+img,
+input,
+ins,
+kbd,
+label,
+legend,
+li,
+link,
+main,
+map,
+mark,
+meter,
+nav,
+object,
+ol,
+optgroup,
+option,
+output,
+p,
+param,
+picture,
+pre,
+progress,
+q,
+rp,
+rt,
+ruby,
+s,
+samp,
+section,
+select,
+small,
+span,
+strong,
+sub,
+summary,
+sup,
+svg,
+table,
+tbody,
+td,
+template,
+textarea,
+tfoot,
+th,
+thead,
+tr,
+track,
+u,
+ul,
+video,
+wbr {
+  position: relative;
+  vertical-align: baseline;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/*
+ * Add the correct text decoration in Chrome, Edge, and Safari.
+ */
+abbr:where([title]) {
+  cursor: help;
+  text-decoration: underline dotted;
+}
+
+/*
+ * 1. Remove `border-radius` in Edge.
+ * 2. Remove the inheritance of `text-transform` in Edge, IE11 and IE10.
+ */
+button {
+  border-radius: 0; /* 1 */
+  text-transform: none; /* 2 */
+}
+
+/*
+ * Corrects the `display` in all browsers.
+ */
+details > summary:first-of-type {
+  display: list-item;
+}
+
+/* 
+ * 1. Correct the odd `appearance` in Chrome and Safari.
+ * 2. Correct the `outline-offset` in Safari.
+ */
+input[type=search] {
+  appearance: textfield; /* 1 */
+  outline-offset: -0.125rem; /* 2 */
+}
+input[type=search]::-webkit-search-cancel-button {
+  cursor: pointer;
+}
+input[type=range]::-webkit-slider-thumb {
+  cursor: grab;
+}
+input[type=range]:active::-webkit-slider-thumb {
+  cursor: grabbing;
+}
+
+h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+@media screen and (min-width: 75rem) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+@media screen and (min-width: 75rem) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+@media screen and (min-width: 75rem) {
+  h3 {
+    font-size: 1.75rem;
+  }
+}
+
+h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+@media screen and (min-width: 75rem) {
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+/* 
+ * Remove the inheritance of `word-wrap` in Safari.
+ */
+select {
+  word-wrap: normal;
+}
+
+small {
+  font-size: 0.875rem;
+}
+
+/* 
+ * Add the correct `font-weight` in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+ * Remove default `color` in Safari on iOS 15+. 
+ */
+button,
+select {
+  color: inherit;
+}
+
+/*
+ * Corrects the inability to style clickable types in Safari and Safari on iOS.
+ */
+[type=button],
+[type=reset],
+[type=submit],
+button {
+  appearance: button;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+  line-height: inherit;
+}
+
+[role=button],
+[type=button],
+[type=checkbox],
+[type=radio],
+[type=range],
+[type=reset],
+[type=submit],
+button,
+select,
+summary {
+  cursor: pointer;
+}
+
+canvas,
+iframe,
+img,
+object,
+svg,
+video {
+  max-width: 100%;
+  overflow: visible;
+  user-select: none;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: var(--secondary-font);
+}
+
+/*
+ * 1. Make `::placeholder` have the same positioning as control text in Safari.
+ */
+input::placeholder,
+textarea::placeholder {
+  user-select: none;
+  line-height: normal; /* 1 */
+  color: rgb(175, 175, 175);
+}
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: rgb(200, 200, 200);
+}
+
+/*
+ * Prevent `sub` and `sup` elements from affecting the `line-height`.
+ */
+sub,
+sup {
+  line-height: 0;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+[hidden=until-found] {
+  display: revert;
+}
+
+:disabled {
+  cursor: not-allowed;
+}
+
+/*
+ * 1. Change font properties to `inherit` in Safari.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+::-webkit-file-upload-button {
+  font: inherit; /* 1 */
+  appearance: button; /* 2 */
+}
+
+/*
+ * Correct the cursor style of increment and decrement buttons in Safari.
+ */
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+ * Remove the inner `padding` in Chrome and Safari.
+ */
+::-webkit-search-decoration {
+  appearance: none;
+}

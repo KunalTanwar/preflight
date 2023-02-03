@@ -1,0 +1,21 @@
+{
+    "name": "preflight",
+    "version": "1.0.0",
+    "description": "An opinionated set of Base Styles.",
+    "author": "Kunal Tanwar",
+    "license": "MIT",
+    "scripts": {
+        "dev:compile": "sass src/scss/preflight.scss -w -q --no-source-map dist/css/preflight.css",
+        "dev:compile-alt": "sass src/scss/preflight.inter.scss -w -q --no-source-map dist/css/preflight.inter.css",
+        "dev:prefix": "postcss dist/css/preflight.css -u autoprefixer --no-map -o dist/css/preflight.prefixed.css -w",
+        "dev:prefix-alt": "postcss dist/css/preflight.inter.css -u autoprefixer --no-map -o dist/css/preflight.inter.prefixed.css -w",
+        "production": "sass src/scss/preflight.scss -q --no-source-map -s compressed dist/css/preflight.min.css && postcss dist/css/preflight.min.css -u autoprefixer --no-map -r",
+        "production-alt": "sass src/scss/preflight.inter.scss -q --no-source-map -s compressed dist/css/preflight.inter.min.css && postcss dist/css/preflight.inter.min.css -u autoprefixer --no-map -r"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.13",
+        "postcss": "^8.4.21",
+        "postcss-cli": "^10.1.0",
+        "sass": "^1.58.0"
+    }
+}
