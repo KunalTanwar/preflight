@@ -47,8 +47,8 @@ body {
 }
 @supports (font-feature-settings: normal) {
   body {
-    font-family: "Inter var", var(--primary-font);
     font-feature-settings: "cv07", "cv08", "cv10";
+    font-family: "Inter var", Inter, var(--primary-font);
   }
 }
 
