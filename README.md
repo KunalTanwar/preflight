@@ -55,12 +55,14 @@ You can add **Inter** manually or just copy the below code and paste it before `
 
 ## Raw Files
 
--   [`preflight.scss`](https://cdn.jsdelivr.net/gh/KunalTanwar/preflight/src/scss/preflight.scss)
--   [`preflight.inter.scss`](https://cdn.jsdelivr.net/gh/KunalTanwar/preflight/src/scss/preflight.inter.scss)
--   [`preflight.prefixed.css`](https://cdn.jsdelivr.net/gh/KunalTanwar/preflight/dist/css/preflight.prefixed.css)
--   [`preflight.inter.prefixed.css`](https://cdn.jsdelivr.net/gh/KunalTanwar/preflight/dist/css/preflight.inter.prefixed.css)
--   [`preflight.min.css`](https://cdn.jsdelivr.net/gh/KunalTanwar/preflight/dist/css/preflight.min.css)
--   [`preflight.inter.min.css`](https://cdn.jsdelivr.net/gh/KunalTanwar/preflight/dist/css/preflight.inter.min.css)
+-   [`preflight.scss`](https://raw.githubusercontent.com/KunalTanwar/preflight/master/src/scss/preflight.scss)
+-   [`preflight.inter.scss`](https://raw.githubusercontent.com/KunalTanwar/preflight/master/src/scss/preflight.inter.scss)
+-   [`preflight.css`](https://raw.githubusercontent.com/KunalTanwar/preflight/master/dist/css/preflight.css)
+-   [`preflight.inter.css`](https://raw.githubusercontent.com/KunalTanwar/preflight/master/dist/css/preflight.inter.css)
+-   [`preflight.prefixed.css`](https://raw.githubusercontent.com/KunalTanwar/preflight/master/dist/css/preflight.prefixed.css)
+-   [`preflight.inter.prefixed.css`](https://raw.githubusercontent.com/KunalTanwar/preflight/master/dist/css/preflight.inter.prefixed.css)
+-   [`preflight.min.css`](https://raw.githubusercontent.com/KunalTanwar/preflight/master/dist/css/preflight.min.css)
+-   [`preflight.inter.min.css`](https://raw.githubusercontent.com/KunalTanwar/preflight/master/dist/css/preflight.inter.min.css)
 
 ## Bug
 
